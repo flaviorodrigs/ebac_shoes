@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: #eeeeee;
+}
+
+header{
+    background-color: #3668d6;
+    padding: 10px 0;
+}
+
+h1{
+    font-size: 2.1em;
+}
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+header>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li{
+    margin-left: 15px;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+/* Cabeçalho */
+
+h1, h2{
+    font-style: italic;
+}
+
+h2{
+    color: #3668d6;
+}
+
+hr{
+    border: 1px solid #3668d6;
+    margin-bottom: 25px;
+}
+
+section{
+    margin: 30px 0 45px 0;
+}
+
+#sobre article{
+    display: grid;
+    grid-template-columns: 36% 61%;
+    gap: 3%;
+    text-align: justify;
+}
+
+article h2{
+    margin-bottom: 10px;
+}
+
+#sobre article img{
+    width: 100%;
+}
+
+#produtos .divDosProdutos ul{
+    display: grid;
+    grid-template-columns: repeat(4, 23.5%);
+    gap: 2%;
+    list-style: none;
+}
+
+#produtos .divDosProdutos ul li img{
+    width: 100%;
+    box-shadow: 1px 1px 2px silver;
+    margin: 25px 0;
+}
+
+#produtos .divDosProdutos ul li h3,p{
+    padding-bottom: 12px;
+}
+
+#produtos .divDosProdutos ul li button{
+    background-color: #3668d6;
+    border: none;
+    width: 100%;
+    color: white;
+    border-radius: 3px;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 640px){
+    .container{
+        width: 85%;
+    }
+
+    h1{
+        width: 40%;
+    }
+
+    nav{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #sobre article{
+        display: block;
+    }
+
+    article h2{
+        margin-top: 20px;
+    }
+
+    #produtos .divDosProdutos ul{
+        display: block;
+    }
+
+    #produtos .divDosProdutos ul li button{
+        padding: 8px;
+    }
+
+    #produtos .divDosProdutos ul li img{
+        box-shadow: 1px 1px 2px 1px silver;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    .container{
+        width: 85%;
+    }
+    
+    #sobre article{
+        display: block;
+    }
+
+    article h2{
+        margin-top: 20px;
+    }
+
+    #produtos .divDosProdutos ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 3%;
+    }
+
+    #produtos .divDosProdutos ul li button{
+        padding: 8px;
+    }
+}
