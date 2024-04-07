@@ -177,3 +177,9 @@ article h2{
         padding: 8px;
     }
 }
+
+@media screen and (orientation:landscape) and (min-width: 641px) and (max-width: 1024px){
+    .container{
+        width: 90%;
+    }
+}
